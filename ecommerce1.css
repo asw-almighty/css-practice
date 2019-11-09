@@ -1,0 +1,149 @@
+:root {
+  --colorOne: #d5ecf4;
+  --colorTwo: #e5efd9;
+  --colorThree: #fcf8c0;
+  --colorFour: #ebebeb;
+  --colorFive: #f4c5c3;
+  --colorSix: #e5efd8;
+  --colorSeven: #fcf8c0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.header h1 {
+  margin-top: 0;
+  font-size: 60px;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.header .header__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav span {
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav li {
+  margin-bottom: 10px;
+}
+
+.header__nav li:last-child {
+  margin-bottom: 0;
+}
+
+.grid {
+  grid-auto-rows: 30vh;
+  grid-gap: 20px;
+}
+
+.grid .grid__item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .grid__item:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/7f/0f/c0/7f0fc0da27b265a0703f633a581c5276.jpg);
+}
+
+.grid .grid__item:nth-child(3) {
+  background-color: var(--colorTwo);
+}
+
+.grid .grid__item:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/fd/e2/58/fde258936992ab422965538dea717d89.jpg);
+}
+
+.grid .grid__item:nth-child(5) {
+  background-color: var(--colorThree);
+}
+.grid .grid__item:nth-child(6) {
+  background-color: var(--colorFour);
+}
+.grid .grid__item:nth-child(7) {
+  background-image: url(https://i.pinimg.com/564x/67/9c/0e/679c0e860c7bbde99d27f4e162707550.jpg);
+}
+
+.grid .grid__item:nth-child(8) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorFive);
+}
+
+.grid .grid__item:nth-child(9) {
+  grid-area: span 2;
+  background-image: url(https://i.pinimg.com/564x/cb/26/5a/cb265a3d2ea48aa5e4f11b9098831038.jpg);
+}
+
+.grid .grid__item:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/d6/0d/36/d60d36a0e17e86faeb696609dcee5855.jpg);
+}
+
+.grid .grid__item:nth-child(11) {
+  background-image: url(https://i.pinimg.com/564x/a5/e2/05/a5e205d2d318a4f1c867218fdfa641a9.jpg);
+}
+
+.grid .grid__item:nth-child(12) {
+  background-image: url(https://i.pinimg.com/236x/11/c5/c1/11c5c13f299b100ba892114b03ef77aa.jpg);
+}
+
+.grid .grid__item:nth-child(13) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorSix);
+}
+
+.grid .grid__item:nth-child(14) {
+  background-image: url(https://i.pinimg.com/564x/6e/45/5c/6e455c6839e6e616bdfd347fa2f46688.jpg);
+}
+
+.grid .grid__item:nth-child(15) {
+  background-image: url(https://i.pinimg.com/564x/a0/bb/dc/a0bbdcbc5a0d9b7dccc9f4a17a093680.jpg);
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.footer span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 25px;
+}
